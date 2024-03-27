@@ -6,7 +6,7 @@ Um projeto Fitteya Tech
 
 Nosso produto monitora a temperatura e umidade do ar durante a produção de algodão;
 
-### 📋 Resultados Esperados
+## 📋 Resultados Esperados
 
 O projeto tem como resultado esperado, entregar ao cliente mais eficiência a colheita. ;<br>
 
