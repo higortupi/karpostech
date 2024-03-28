@@ -1,6 +1,6 @@
-# 🐑 Karpós Tech
+# 🐑 Karpós Dash
 
-Um projeto Fitteya Tech
+Um projeto Karpós Tech
 
 ## 🚀 Começando
 
