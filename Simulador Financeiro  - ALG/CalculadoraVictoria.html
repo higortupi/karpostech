@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CottonClouds </title>
+</head>
+<body>
+    <div>
+        <h1> Simulador financeiro </h1>
+        <h2> Descubra como a nossa solução pode transformar os resultados financeiros da sua empresa! </h2>
+    </div>
+    
+    <div>
+        <b>Para iniciarmos, insira o nome da sua empresa:</b>
+        <input id="input_nome">
+        <p>
+        <b>No ultimo ano, qual foi o valor aproximado do faturamendo da empresa:</b>
+        <input id="input_fat">
+        <p>
+        <button onclick="Calcular()"> <b> Calcular a perda </b></button>
+    </div>
+
+    <div id="div_exibir"></div>
+
+</body>
+</html>
+
+<script>
+    function Calcular() {
+        var nome = input_nome.value
+        var faturamento = Number (input_fat.value)
+        var mRomularia = 0.35
+        var mBranco = 0.50
+        var mAlvo = 0.40
+        var mFungos = (mRomularia + mBranco + mBranco) / 3
+        var perda = faturamento * mFungos
+        var porcentagem = mFungos * 100
+
+        div_exibir.innerHTML = 
+        `<br>
+        Parabéns ${nome}! Sabemos que para alcançarem o faturamento de R$${faturamento} no último ano, certamente tiveram muita dedicação e trabalho árduo.<p>
+        A análise que fizemos sobre os seus resultados revelou insights cruciais: fungos podem estar comprometendo o seu faturamento anual e a qualidade seu produto.<p>
+
+        <h3>Veja a seguir algumas estimativas sobre os seus resultados com a nossa solução:</h3>
+        Sem a nossa solução, estimamos que no seu faturamento anual a sua perda tem sido de R$ ${perda}.
+        Com a nossa solução, o seu faturamento anual almentaria em ${porcentagem}%. <p>
+        Quer conhecer a nossa solução? Clique nesse botão <button onclick="Solução()"><b> Conhecer solução </b></button>
+
+        <p>
+        <i>Este calculo foi feito com base na perda por fungos Mancha de Romulária, Mofo-Branco e Mancha-Alvo (os mais comuns na plantação de algodoeiro).</i>
+
+
+        `
+
+
+
+    }
+</script>

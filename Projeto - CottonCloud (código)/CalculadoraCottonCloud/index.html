@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Financeiro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="descricao">
+            <h1 class="titulo">Simulador Financeiro</h1>
+            <p class="paragrafo-descricao">Use a nossa calculadora financeira e surpreenda-se com o quanto nós
+                podemos
+                <span class="destaque verde italico">influenciar na sua
+                    produção.</span>
+            </p>
+        </div>
+        <div class="conteudo" id="conteudo">
+            <div class="div-input">
+                <p class="paragrafo-input">Qual o nome da sua empresa?</p>
+                <input type="text" id="nome_empresa">
+            </div>
+            <div class="div-input">
+                <p class="paragrafo-input">Qual é o seu faturamento anual?</p>
+                <input type="number" id="faturamento_anual">
+            </div>
+        </div>
+        <div class="div-botao" id="div_botao">
+            <button onclick="simular()">Fazer Simulação</button>
+        </div>
+        <div class="resultado" id="div_resultado"></div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function simular() {
+        let nomeEmpresa = nome_empresa.value
+        let faturamentoAnual = Number(faturamento_anual.value)
+        let perdaFungoAnual = faturamentoAnual * 0.75
+        let perdaFungoMensal = perdaFungoAnual / 12
+        let faturamentoAnualPossivel = faturamentoAnual + perdaFungoAnual
+        let faturamentoMensalPossivel = faturamentoAnualPossivel / 12
+
+        //formatando as variáveis de números
+        let formatFaturamentoAnual = faturamentoAnual.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+        let formatPerdaFungoAnual = perdaFungoAnual.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+        let formatPerdaFungoMensal = perdaFungoMensal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+        let formatFaturamentoAnualPossivel = faturamentoAnualPossivel.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+        let formatFaturamentoMensalPossivel = faturamentoMensalPossivel.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+
+        conteudo.innerHTML = `<p><span class="destaque">Parabéns ${nomeEmpresa}!</span> Sabemos que para alcançarem o <span class="italico">faturamento de <span class="destaque amarelo">${formatFaturamentoAnual}</span> no último ano certamente tiveram muita dedicação e trabalho árduo.</p>
+            
+        <p>A análise que fizemos sobre os seus resultados revelou alguns insights cruciais: Devido a <span class="italico">falta de monitoramento de temperatura e umidade</span>, o fungo pode estar comprometendo o seu faturamento anual e a qualidade do seu produto.</p>
+        <p>De acordo com uma <a href="https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/1112910/1/BOL100ManchaRamularia.pdf" target="blank">pesquisa feita pela Embrapa</a>, uma plantação de algodão pode ser prejudicada <span class="destaque">em até 75%</span> devido a presença do fungo Mancha de Ramulária.</p>
+        
+        <h3>Possibilidade de perda por falta de controle</h3>
+        <p class="paragrafo-perda">
+            <span class="destaque vermelho">
+                Mensal: ${formatPerdaFungoMensal}
+            </span>
+        </p>
+        <p class="paragrafo-perda">
+            <span class="destaque vermelho">
+                Anual: ${formatPerdaFungoAnual}
+            </span>
+        </p>
+
+        <h3>Veja a seguir algumas estimativas sobre os seus resultados com a nossa solução:</h3>
+
+        <h4>Oportunidade</h4>
+        <p>
+            Atráves da nossa solução você tem a possibilidade de elevar o seu <span class="italico">faturamento</span> de <span class="destaque amarelo">${formatFaturamentoAnual}</span> para <span class="destaque verde">${formatFaturamentoAnualPossivel}</span>, podendo gerar uma receita estimada de <span class="destaque verde">${formatFaturamentoMensalPossivel} por mês!</span>
+        </p>
+        
+        <p><i>Este cálculo foi feito com base na perda pelo fungo Mancha de Romulária (o principal fungo das plantações de algodão).</i></p>`
+
+        div_botao.innerHTML = ''
+    }
+</script>

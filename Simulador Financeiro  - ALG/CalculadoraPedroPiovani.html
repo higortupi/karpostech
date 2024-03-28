@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simulador Financeiro</h1>
+    Nome da Empresa:
+    <input id="input_nome"><br>
+    Insira a Renda Anual da Empresa:
+    <input id="input_renda"><br>
+    Insira a Meta Anual:
+    <input id="input_meta"><br>
+    <button onclick="calcularRenda()">CALCULAR SUA RENDA</button>
+    <div id="div_resultado"></div>
+</body>
+</html>
+
+<script>
+    function calcularRenda(){
+        var nome = input_nome.value
+        var renda = Number(input_renda.value)
+        var meta = Number(input_meta.value)
+        var prejuizo = meta - renda
+        var sensor = renda + (prejuizo * 0.4)
+
+        div_resultado.innerHTML = `Olá ${nome}, seja bem vindo ao nosso Simulador Financeiro, com base em nossas pesquisas a sua perda R$${prejuizo} vem dos fungos criados por conta da Temperatura e Umidade, que quando estão muito altas ou muito baixas, acaba ocorrendo a criação deles.<br> Com o uso dos nossos sensores a sua renda de R$${renda} poderia ter aumentado para R$${sensor}.` 
+    }
+</script>

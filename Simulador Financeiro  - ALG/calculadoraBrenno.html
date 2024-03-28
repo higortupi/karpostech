@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssexterno.css">
+    <title>calculadora financeira</title>
+</head>
+
+<body>
+<center>
+    <div class="quadrado">
+        <div class="calc">]
+            <h1>calculadora financeira</h1>
+            <p>Informe A quantidade de tonelada vendidas</p><br>
+            <input type="text" id="tonelada" placeholder="R$"><br>
+            <p>Preço por tonelada</p>
+            <input type="text" id="preco" placeholder="R$"> <br>
+            <center>
+            <button onclick="mostraganho()">calcular possivel ganho</button>
+            </center>
+            <p id="mostra"></p>
+        </div>
+    </div>
+</center>
+</body>
+
+</html>
+
+<script>
+
+    function mostraganho() {
+        var quantidade = Number(tonelada.value)
+        var precotonelada = Number(preco.value)
+        var dinheiro = quantidade * precotonelada
+        var soluçãominimo = dinheiro / 0.60
+        var solucao = dinheiro / 0.25
+
+
+        mostra.innerHTML = `atualmente vc ganha ${dinheiro} com nossa solução vc pode  ganhar de  ${soluçãominimo} até ${solucao}
+        <Br> <br> <br>`
+    }
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora financeira</title>
+</head>
+
+<body>
+    <div class="pai" style="font-family: monospace ; display: flex;;justify-content:space-evenly; align-items: center; flex-direction: column; ">
+        <h1 style="display: flex; ">Calculadora Financeira</h1>
+        <div class="filho" style="display: flex;">
+            <div class="filho calculadora" style="color: white;margin-top: 10px;font-size: 25px;background-color: rgb(61, 179, 61); display: flex; align-items: center; flex-direction: column;">
+
+               <span style="margin-top: 10px;"> Informe A quantidade de tonelada vendidas: </span><br><br>
+                <input type="text" id="tonelada" placeholder="R$"><br><br>
+                Preço por tonelada: <br><br>
+                <input type="text" id="preco" placeholder="R$"> <br><br>
+                <button onclick="mostraganho()" style="height: 20px; width: 40;">CALCULAR</button>
+
+                <p id="mostra"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    function mostraganho() {
+        var quantidade = Number(tonelada.value)
+        var precotonelada = Number(preco.value)
+        var dinheiro = quantidade * precotonelada
+
+        var solucao = dinheiro / 0.55
+
+        mostra.innerHTML = `atualmente vc ganha ${dinheiro} com nossa solução vc vai ganhar ${solucao}`
+    }
+</script>
