@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../Karpos/assets/algodao.png);
+    background-repeat: no-repeat;
+    background-color: #B7A19A;
+    background-size: cover; /* ou background-size: contain; dependendo da preferência */
+    font-family: 'Inter', sans-serif; /* Aplicando a fonte Inter */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px; /* Espaçamento do cabeçalho */
+    
+}
+
+#logo-karpos img {
+    margin-left: 100px; /* Espaçamento da esquerda */
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul a {
+    text-decoration: none;
+    color: #DBEAEC; /* Cor do texto do menu */
+    margin: 0 49px; /* Espaçamento entre os itens do menu */
+}
+
+#social-medias img {
+    margin-right: 100px; /* Espaçamento da direita */
+}
+
+/* Estilos para a página de contato */
+
+.pagina-contato {
+    width: 1029px;
+    margin: 40px auto 20px; /* Adiciona uma margem de 97px em cima */
+}
+
+
+.conteudo-contato {
+    height: 100%; /* Adicionando altura para garantir que as divs filhas tenham altura */
+}
+
+.container {
+    display: flex;
+    height: 100%; /* Distribui o espaço igualmente entre as divs da esquerda e da direita */
+}
+
+.esquerda {
+    width: 375px;
+    background-color: #B7A19A;
+    border-radius: 40px; /* Adicionando border-radius */
+}
+
+.logo-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ocupa toda a altura da div */
+}
+
+.logo-contato img {
+    max-width: 80%; /* Ajuste conforme necessário */
+    max-height: 80%; /* Ajuste conforme necessário */
+}
+
+.direita {
+    flex: 1; /* Ocupa o restante do espaço disponível */
+    background-color: #DBB19B;
+    border-radius: 40px; /* Adicionando border-radius */
+    padding: 20px; /* Adicionando um espaçamento interno */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    text-align: center;
+    margin-bottom: 13px; /* Adicionando espaçamento entre os campos */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center;
+}
+
+.label {
+    color: #000; /* Cor do texto do label */
+    margin-bottom: 5px; /* Adiciona um espaçamento entre o rótulo e o campo de entrada */
+}
+
+.input {
+    width: 425px;
+    height: 62px;
+    border-radius: 10px;
+    border: 0px solid #000; /* Adicionando uma borda */
+    padding: 10px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura do input */
+}
+
+.textarea {
+    width: 448px;
+    height: 159px;
+    border-radius: 10px;
+    border: 0px solid #000000; /* Adicionando uma borda */
+    padding: 10px;
+    resize: none; /* Impede o redimensionamento do textarea */
+}
+
+.titulo {
+    font-size: 60px; /* Tamanho da fonte do título */
+    font-weight: medium; /* Peso da fonte do título */
+    text-align: center; /* Centraliza o texto do título */
+    margin-bottom: 26px; /* Adiciona um espaçamento abaixo do título */
+    color: #DBEAEC;
+}
+
+.subtitulo {
+    font-size: 30px; /* Tamanho da fonte do subtitulo */
+    font-weight: normal; /* Peso da fonte do subtitulo */
+    text-align: center; /* Centraliza o texto do subtitulo */
+    margin-bottom: 26px; /* Adiciona um espaçamento abaixo do subtitulo */
+    color: #DBEAEC;
+}
