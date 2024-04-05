@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../Karpos/assets/algodao.png);
+    background-image: url(../SiteKarpo/assets/algodao.png);
     background-repeat: no-repeat;
     background-color: #B7A19A;
     background-size: cover; /* ou background-size: contain; dependendo da preferência */
@@ -18,7 +18,7 @@ header {
 }
 
 #logo-karpos img {
-    margin-left: 100px; /* Espaçamento da esquerda */
+    margin-left: auto; /* Espaçamento da esquerda */
 }
 
 ul {
@@ -35,7 +35,7 @@ ul a {
 }
 
 #social-medias img {
-    margin-right: 100px; /* Espaçamento da direita */
+    margin-right: auto; /* Espaçamento da direita */
 }
 
 /* Estilos para o texto central */
