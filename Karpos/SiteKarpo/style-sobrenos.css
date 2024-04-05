@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../Karpos/assets/algodao.png);
+    background-repeat: no-repeat;
+    background-color: #B7A19A;
+    background-size: cover; /* ou background-size: contain; dependendo da preferência */
+    font-family: 'Inter', sans-serif; /* Aplicando a fonte Inter */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px; /* Espaçamento do cabeçalho */
+    
+}
+
+#logo-karpos img {
+    margin-left: 100px; /* Espaçamento da esquerda */
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul a {
+    text-decoration: none;
+    color: #DBEAEC; /* Cor do texto do menu */
+    margin: 0 49px; /* Espaçamento entre os itens do menu */
+}
+
+#social-medias img {
+    margin-right: 100px; /* Espaçamento da direita */
+}
