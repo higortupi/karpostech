@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../SiteKarpo/assets/algodao.png);
+    background-repeat: no-repeat;
+    background-color: #B7A19A;
+    background-size: cover; /* ou background-size: contain; dependendo da preferência */
+    font-family: 'Inter', sans-serif; /* Aplicando a fonte Inter */
+    text-align: center; /* Centraliza o conteúdo do corpo */
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px; /* Espaçamento do cabeçalho */
+    
+}
+
+#logo-karpos img {
+    margin-left: auto; /* Espaçamento da esquerda */
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul a {
+    text-decoration: none;
+    color: #DBEAEC; /* Cor do texto do menu */
+    margin: 0 49px; /* Espaçamento entre os itens do menu */
+}
+
+#social-medias img {
+    margin-right: auto; /* Espaçamento da direita */
+}
+
+#texto-central {
+    position: absolute;
+    bottom: 700px; /* Distância da parte inferior da página */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 45px;
+    font-weight: 600; /* Semibold */
+    color:#DBEAEC; ;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 202px; /* Distância do topo */
+    margin-bottom: 208px; /* Distância do bottom */
+    color: #DBEAEC;
+}
+
+.box {
+    text-align: center;
+    width: 30%;
+    position: relative;
+}
+
+.box img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.box h2 {
+    font-size: 24px;
+}
+
+.line {
+    width: 50%;
+    border: 1px solid #DBEAEC;
+    margin: 10px auto;
+}
+
+.box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
