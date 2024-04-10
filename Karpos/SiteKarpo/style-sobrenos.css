@@ -49,10 +49,11 @@ ul a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     color: #DBEAEC;
     font-family: 'Inter', sans-serif;
+    margin-top: 100px;
  
 }
 
@@ -60,20 +61,24 @@ ul a {
     justify-content: center;
     font-size: 45px;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .texto-sn {  
     justify-content: center;
     align-items: center;
+    font-size: 25px;
 }
 
 .container2 {
+    font-size: 19px;
     display: flex;
     justify-content: center ;
     align-items: center;
     flex-direction: column;
-    width: 300px;
+    width: 350px;
     height: 500px;
     color: #DBEAEC ;
+    margin-top: 80px;
 
 }
